@@ -3,16 +3,16 @@ use structopt::StructOpt;
 
 #[derive(Debug, StructOpt)]
 pub enum Action {
-    /// write tasks to the journal file.
+    /// Write tasks to the journal file.
     Add {
-        ///The task decription text.
-        #[structopt()] 
-        task: String ,
+        /// The task description text.
+        #[structopt()]
+        task: String,
     },
     /// Remove an entry from the journal file by position.
-    Done { 
+    Done {
         #[structopt()]
-        position: usize, 
+        position: usize,
     },
     /// List all tasks in the journal file.
     List,
@@ -21,8 +21,7 @@ pub enum Action {
 #[derive(Debug, StructOpt)]
 #[structopt(
     name = "Rusty Journal",
-    about = "A command line to-do app written in Rust",
-    author = "Mohammed Younis, mohammedyounis.vercel.app"
+    about = "A command line to-do app written in Rust"
 )]
 pub struct CommandLineArgs {
     #[structopt(subcommand)]
