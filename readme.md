@@ -24,9 +24,9 @@ rusty-journal [OPTIONS] <SUBCOMMAND>
 
 ## Options
 
-`-h, --help`: Prints help information.
-`-V, --version`: Prints version information.
-`-j, --journal-file <journal-file>`: Use a different journal file.
+1. `-h, --help`: Prints help information.
+2. `-V, --version`: Prints version information.
+3. `-j, --journal-file <journal-file>`: Use a different journal file.
 
 ## Subcommands
 
